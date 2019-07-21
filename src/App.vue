@@ -5,16 +5,28 @@
     <div class="ui container">
       <br><br>
       <div class="ui secondary vertical pointing huge menu">
-        <a href="" class="active green item">
-          Demacia
-        </a>
-        <a href="" class="item">
-          Noxus
-        </a>
-        <a href="" class="item">
-          About
-        </a>
+        <router-link to="/">
+          <div class="item">
+            Demacia
+          </div>
+        </router-link>
+        
+        <router-link to="/noxus">
+          <div class="item">
+            Noxus
+          </div>
+        </router-link>
+
+        <router-link to="/about">
+          <div class="item">
+            About
+          </div>
+        </router-link>
       </div>
+    </div>
+
+    <div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -28,4 +40,15 @@ export default {
   }  
 }
 </script>
+
+<style scoped>
+
+.router-link-exact-active div {
+  color: #42b883 !important;
+  border-right: 2px solid #42b883 !important;
+}
+
+</style>
+
+
 
