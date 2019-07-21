@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <NavBar />
-    <button class="ui primary button">Hello!</button>
+    
+    <div class="ui container">
+      <button class="ui primary button">Yow</button>
+    </div>
   </div>
 </template>
 
