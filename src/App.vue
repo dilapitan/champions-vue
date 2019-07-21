@@ -4,16 +4,12 @@
     
     <br><br>
     <div class="ui container">
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui secondary vertical pointing huge menu">
-            <router-link v-for="item in items" :key="item.name" :to="item.link" exact>
-              <div class="item">{{ item.name }}</div>
-            </router-link>
-          </div>
+      <div class="ui stackable grid">
+        <div class="four wide column ui secondary vertical huge menu">
+          <router-link v-for="item in items" :key="item.name" :to="item.link" exact>
+            <div class="item">{{ item.name }}</div>
+          </router-link>
         </div>
-
-        <div class="one wide column"></div>
 
         <div class="eleven wide column">
           <router-view></router-view>
@@ -46,10 +42,10 @@ export default {
 <style scoped>
 
 .router-link-exact-active div {
-  color: #42b883 !important;
-  border-right: 2px solid #42b883 !important;
+  background-color: #42b883 !important;
+  color: white !important;
+  font-weight: 700 !important;
 }
-
 </style>
 
 
