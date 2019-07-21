@@ -3,7 +3,18 @@
     <NavBar />
     
     <div class="ui container">
-      <button class="ui primary button">Yow</button>
+      <br><br>
+      <div class="ui secondary vertical pointing huge menu">
+        <a href="" class="active green item">
+          Demacia
+        </a>
+        <a href="" class="item">
+          Noxus
+        </a>
+        <a href="" class="item">
+          About
+        </a>
+      </div>
     </div>
   </div>
 </template>

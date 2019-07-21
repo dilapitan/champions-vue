@@ -14,6 +14,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/noxus',
+      name: 'noxus',
+      component: () => import(/* webpackChunkName: "about" */ './views/Noxus.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

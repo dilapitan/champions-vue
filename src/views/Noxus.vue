@@ -1,12 +1,11 @@
 <template>
   <div>
-    <h1>Home / Demacia Page</h1>
+    <h1>Noxus Page</h1>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Home'
+  name: 'Noxus'
 }
 </script>
