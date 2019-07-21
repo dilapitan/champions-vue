@@ -5,22 +5,8 @@
     <div class="ui container">
       <br><br>
       <div class="ui secondary vertical pointing huge menu">
-        <router-link to="/">
-          <div class="item">
-            Demacia
-          </div>
-        </router-link>
-        
-        <router-link to="/noxus">
-          <div class="item">
-            Noxus
-          </div>
-        </router-link>
-
-        <router-link to="/about">
-          <div class="item">
-            About
-          </div>
+        <router-link v-for="item in items" :key="item.name" :to="item.link" exact>
+          <div class="item">{{ item.name }}</div>
         </router-link>
       </div>
     </div>
@@ -37,7 +23,16 @@ export default {
   name: "App",
   components: {
     NavBar
-  }  
+  },
+  data () {
+    return {
+      items: [
+        { name: "Demacia", link: "/" },
+        { name: "Noxus", link: "/noxus" },
+        { name: "About", link: "/about" }
+      ]
+    }
+  }
 }
 </script>
 
