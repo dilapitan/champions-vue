@@ -1,0 +1,36 @@
+{
+  "demacia": [
+    {
+      "id": "DemaciaGaren",
+      "name": "Garen",
+      "description": "The Might of Demacia"
+    },
+    {
+      "id": "DemaciaFiora",
+      "name": "Fiora",
+      "description": "The Grand Duelist"
+    },
+    {
+      "id": "DemaciaLux",
+      "name": "Lux",
+      "description": "The Lady of Luminosity"
+    }
+  ],
+  "noxus": [
+    {
+      "id": "NoxusDarius",
+      "name": "Darius",
+      "description": "The Hand of Noxus"
+    },
+    {
+      "id": "NoxusLeblanc",
+      "name": "LeBlanc",
+      "description": "The Deceiver"
+    },
+    {
+      "id": "NoxusSwain",
+      "name": "Swain",
+      "description": "The Master Tactician"
+    }
+  ]
+}
