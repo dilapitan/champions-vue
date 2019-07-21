@@ -2,18 +2,25 @@
   <div id="app">
     <NavBar />
     
+    <br><br>
     <div class="ui container">
-      <br><br>
-      <div class="ui secondary vertical pointing huge menu">
-        <router-link v-for="item in items" :key="item.name" :to="item.link" exact>
-          <div class="item">{{ item.name }}</div>
-        </router-link>
+      <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui secondary vertical pointing huge menu">
+            <router-link v-for="item in items" :key="item.name" :to="item.link" exact>
+              <div class="item">{{ item.name }}</div>
+            </router-link>
+          </div>
+        </div>
+
+        <div class="one wide column"></div>
+
+        <div class="eleven wide column">
+          <router-view></router-view>
+        </div>
       </div>
     </div>
 
-    <div>
-      <router-view></router-view>
-    </div>
   </div>
 </template>
 
